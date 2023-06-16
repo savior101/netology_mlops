@@ -38,4 +38,4 @@ Worker-nodes - ноды, предназначенные для непосред�
 
 Хотя, например, k3s, отказывается от концепции master/slave (master/worker). В нем присутствует 2 типа нод: server и agent, однако приложения можно деплоить не только на agent, но и на sever.
 
-**Deployment для tomcat [здесь](https://github.com/savior101/netology_mlops/blob/main/03_k8s/hw/tomcat.yaml)https://github.com/savior101/netology_mlops/blob/main/03_k8s/hw/tomcat.yaml).**
+**Deployment для tomcat [здесь](https://github.com/savior101/netology_mlops/blob/main/03_k8s/hw/tomcat.yaml).**
