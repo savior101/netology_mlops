@@ -1,0 +1,39 @@
+
+PLAY [netology-ml] *************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [bobw1]
+ok: [bobm1]
+
+TASK [Task ping] ***************************************************************
+ok: [bobw1]
+ok: [bobm1]
+
+TASK [Update apt cache] ********************************************************
+ok: [bobw1]
+changed: [bobm1]
+
+TASK [Install packages with apt] ***********************************************
+ok: [bobw1]
+changed: [bobm1]
+
+TASK [Copy file] ***************************************************************
+changed: [bobw1]
+changed: [bobm1]
+
+TASK [Create groups] ***********************************************************
+changed: [bobw1] => (item=devops_1)
+changed: [bobw1] => (item=test_1)
+changed: [bobm1] => (item=devops_1)
+changed: [bobm1] => (item=test_1)
+
+TASK [Create users] ************************************************************
+changed: [bobw1] => (item={'user_name': 'devops_1', 'home_dir': 'devops_1'})
+changed: [bobw1] => (item={'user_name': 'test_1', 'home_dir': 'test_1'})
+changed: [bobm1] => (item={'user_name': 'devops_1', 'home_dir': 'devops_1'})
+changed: [bobm1] => (item={'user_name': 'test_1', 'home_dir': 'test_1'})
+
+PLAY RECAP *********************************************************************
+bobm1                      : ok=7    changed=5    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+bobw1                      : ok=7    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
